@@ -66,10 +66,10 @@
 			<div class="slides">
 				<section>
 					<section>
-						<h2>Refactor your health</h2>
-						<h4>An object oriented guide to a healthier life.</h4>
+						<h2>Refactor from a Monolith</h2>
+						<h4>An intermediate guide to almost needlessly complex architecture.</h4>
 						<span class="developed-by"><p>Developed By:</p>
-						<p><a href="https://davewritescode.com">David Merk</a> and <a href="https://www.tonythigpen.com">Tony Thigpen</a></p></span>
+						<p><a href="https://davewritescode.com">David Merk</a></p></span>
 					</section>
 					<section>
 						<div id="left">
@@ -89,59 +89,89 @@
 							</ul>
 						</div>
 					</section>
+				</section>
+				<section>
+					<h2>This presentation assumes you have at least an introductory understanding of all elements of the software development lifecycle.</h2>
+					<ul>
+						<li>N-Tier Architecture</li>
+						<li>Service Oriented Architecture</li>
+						<li>Design Patterns</li>
+						<li>Cloud Providers</li>
+						<li>C#</li>
+						<li>.Net</li>
+						<li>CI/CD</li>
+					</ul>
+				</section>
+				<section>
+					<h2>This presentation is designed for cloud hosted projects struggling to scale vertically.</h2>
+				</section>
+				<section>
+					<h2>Preface, this is not the architecture you should use for your MVP.</h2>
+					<P>You might not benefit from this presentation if you're:</P>
+					<ul>
+						<li>A small team of developers or a startup.</li>
+						<li>You have a small user base or limited traffic.</li>
+						<li>OR... if you haven't encountered problems that have lead you to this as a solution.</li>
+					</ul>
+				</section>
+				<section>
+					<h2>A forword on patterns:</h2>
+					<ul>
+						<li>Patterns sive problems</li>
+						For Instance,
+						<ul>
+							<li>Relational Databases solve different problems than NoSQL Databases.</li>
+							<li>Example: Dependency Injection solves the problem of needing to know what constructs an object in order to instantiate it; by decoupling the creation of an object from its instantiation.</li>
+						</ul>
+					</ul>
+				</section>
+				<section>
+					<h2>Just like design patterns and database patterns- architecture patterns solve problems.</h2>
+					<p>If you don't have any problems, the complexity SOA introduces to your suite of applications probably won't provide you the benefit you're looking to recieve.</p>
+				</section>
+				<section>
+						<h2>Just like design patterns and database patterns- architecture patterns solve problems.</h2>
+						<p>If you don't have any problems, the complexity SOA introduces to your suite of applications probably won't provide you the benefit you're looking to recieve.</p>
+				</section>
+				<section>
 					<section>
-						<div id="left">
-								<img src="images/tony1.jpg">
-							</div>
-						<div id="right">
-							<h3>Tony</h3>
+						<h2>Chapter 1: N-Tier vs SOA</h2>
+					</section>
+					<section>
+						<h2>N-Tier</h2>
+						<P>A system containing at least 3(n) tiers.</P>
+						<ul>
+							<li>Example of N-Tier</li>
 							<ul>
-								<li>Software Engineer at <b>ALTOUR International</b></li>
-								<li>Founder of <b>Phantom Hex</b></li>
-								<li>Hobbies:</li>
-								<ul>
-									<li class="fragment">Fitness</li>
-									<li class="fragment">Coding</li>
-									<li class="fragment">Writing</li>
-									<li class="fragment">Cosplay</li>
-								</ul>
-								<li class="fragment"><span>Blog: <a href="https://www.tonythigpen.com">TonyThigpen.com/blog</a></span></li>
+								<li>MVC - Model View Controller</li>
+								or... As you're probably more familliar with it...
+								<li>Model, View Model, View, Controller, Service, AutoMapper, Repository, SQL</li>
 							</ul>
-						</div>
+						</ul>
 					</section>
-				</section>
-				<section data-background="images/neo.jpg" class="intro-slide">
-					<h2 class="heading-one">This presentation is</h2><br>
-					<h2 class="heading-two">the Hello World</h2><br>
-					<h2 class="heading-three">of your Health</h2>
-					<aside class="notes">
-						Any time I work out with anyone for the first time, I always like to tell them: "Start where you are, use what you've got, do what you can."
-					</aside>
-				</section>
-				<section>
 					<section>
-						<h2>Nutrition</h2>
+						<h2>What problem does this architecture pattern solve?</h2>
 					</section>
-				</section>
-				<section>
 					<section>
-						<h2>Exercise</h2>
+						<h2>N-Tier Continued</h2>
+						<p>What problems does this architecture pattern introduce?</p>
+						<ul>
+							<li>Vertical Scalability</li>
+							<li>Monolithic Code Complexity</li>
+							<li>Slow Development Pipelines</li>
+						</ul>
 					</section>
-				</section>
-				<section>
 					<section>
-						<h2>Lifestyle</h2>
+						<h2>SOA</h2>
+						<p>What are Microservice?</p>
+						<ul>
+							<li>Distributed Systems</li>
+							<li>Independently Scalable</li>
+							<li>Independently Deployable</li>
+						</ul>
 					</section>
 				</section>
 				<section>
-					<section>
-						<h2>Technology</h2>
-					</section>
-				</section>
-				<section>
-					<section>
-						<h2>Special Thanks to:</h2>
-					</section>
 					<section>
 						<h2>QSR Automations</h2>
 					</section>
